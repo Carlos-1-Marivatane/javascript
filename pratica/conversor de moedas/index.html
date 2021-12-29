@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando!</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Por favor!, O seu Nome")
+        var dinheiro = Number(prompt(`${nome.toUpperCase()} Quanto dinheiro voce tem em metical?`))
+        alert(`${nome.toUpperCase()} Clique para ver a conversao.`)
+        document.write(`O seu dinheiro em <strong> dolar </strong>: ${(dinheiro/64).toLocaleString('pt-BR', {style:'currency', currency:'USD'})} <br>`)
+        document.write(`O seu dinheiro em <strong> euro </strong>: ${(dinheiro/74).toLocaleString('pt-BR', {style:'currency', currency:'EUR'})} <br>`)
+        document.write(`O seu dinheiro em <strong> metical </strong>: ${dinheiro.toLocaleString('pt-BR', {style:'currency', currency:'MZN'})}`)
+    </script>
+</body>
+</html>

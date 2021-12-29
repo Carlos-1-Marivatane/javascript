@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #im{
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+    <script>
+        function ocultarConteudo(){
+            document.getElementById("im").style.visibility='hidden';
+        }
+        function mostrarConteudo(){
+            document.getElementById("im").style.visibilty='visible';
+        }
+    </script>
+</head>
+<body>
+    <p>
+        <input onclick="ocultarConteudo()" type="button" value="ocultarconteudo" name="ocultar">
+
+        <input onclick="mostrarConteudo()" type="button" value="Mostrar Imagem" name="mostrar">
+    </p>
+    <div id="im"><img src="Screenshot_2021-04-23-16-16-41-1146024830.png" alt="Imagem" width="200px" height="200px"></div>
+    <p>
+        <input type="submit" value="Fechar Navegador" name="fechar" id="fechar" onclick="window.close();">
+    </p>
+   
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        var nome = prompt("Digite o seu nome!")
+        var mzn = Number.parseFloat(prompt(`${nome.toUpperCase()} Digite O VALOR em MZN!`))
+        confirm(`${nome} deseja ver a conversao?`)
+        document.write(`${nome.toUpperCase()} o seu valor convertido é: <br>`)
+        document.write(`Dolar: ${(mzn/72).toLocaleString('pt-PT', {style: 'currency', currency: 'USD'})} <br>`)
+        document.write(`MZN: ${mzn.toLocaleString('pt-PT', {style: 'currency', currency: 'MZN'})} <br>`)
+        document.write(`EURO: ${(mzn/80).toLocaleString('pt-PT', {style: 'currency', currency: 'EUR'})}`)
+       
+    </script>
+    
+</body>
+</html>

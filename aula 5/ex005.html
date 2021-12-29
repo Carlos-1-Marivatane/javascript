@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducao ao DOM</title>
+    <style>
+        body{
+            background: #336fdfde;
+            color: white;
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <P>Aqui vai o resultado</P>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div class="di">Clique em mim</div>
+    <script>
+        var corpo = window.document.body // Esse comando aceita so pra body
+        corpo.style.backgroundColor='black'
+
+        /*var p2 = window.document.getElementsByTagName('p')[1] // os colchetes para indicar a posicao da tag
+        window.document.write(p2.innerText)
+        p2.innerText="Fazendo o download..."*/
+
+        /*var tid = document.getElementById("di") // selecionadno por Id
+        tid.innerText = "Testando!"*/
+        var tid = document.querySelector('div.di')
+        tid.style.backgroundColor="red"
+
+
+
+    </script>
+       
+</body>
+</html>
