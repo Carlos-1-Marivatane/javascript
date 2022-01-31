@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro ou Não?</title>
+</head>
+<body>
+    <h1>Sistema de verificao de Nacionalidade!</h1>
+    <p>Nome:<input type="text" name="nome" id="nome"></p> 
+    <p>Pais de Origem: <input type="text" id="pais"></p>
+    <p>Nacionalidade:<input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Verificar" onclick="confirmar()">
+    </p>
+    <div id="res">
+
+    </div>
+    <script>
+        function confirmar(){
+            var name = window.document.querySelector("input#nome")
+            var nam = nome.value
+
+            var nacio = window.document.querySelector("input#nacionalidade")
+            var naci = nacionalidade.value
+
+            var ps = window.document.querySelector("input#pais")
+            var pas = pais.value
+
+             var re = window.document.querySelector("div#res")
+           if(pas === 'Moçambique'){
+               re.innerHTML= (`Senhor(a)  <strong>${nam}</strong> Você é  <strong>${naci}</strong>, seja bem - vindo (a)!`)
+           } else{
+               re.innerHTML = (`Senhor(a) <strong>${nam}</strong> Você é  <strong>${naci}</strong>, siga os procedimentos estabelecidos!`)
+           }
+        }
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando!</title>
+    <style>
+        #di{
+            font: arial normal;
+            width: 250px;
+            height: 250px;
+            background:#097c09;
+            line-height: 200px;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="di">Interaja!</div>
+    <script>
+         var pid =document.querySelector("div#di") //Eventos adicionados
+         pid.addEventListener("click",clicar)
+         pid.addEventListener("mouseenter",entrar)
+         pid.addEventListener("mouseout",sair)
+
+        function clicar(){
+            pid.style.color="white"
+            pid.innerText="clicou!".toUpperCase()
+            pid.style.background="gray"
+        }
+        function entrar (){
+           pid.style.color="white"
+           pid.innerText="Entrou!".toUpperCase()
+          
+        }
+        function sair(){
+            pid.style.color="white"
+            pid.innerText="Saiu!".toUpperCase()
+            pid.style.background="#097c09"
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando!</title>
+</head>
+<body>
+    <h1>Choose your Color</h1>
+    <p> Cor:<input type="text" name="cor" id="mudacor">
+    <input type="button" value="Aplicar" onclick="mudar()"></p>
+    <div id="dic"></div>
+
+    <script>
+        function mudar(){
+            var mudaco = window.document.querySelector("input#mudacor")
+            var mudac = mudacor.value
+
+            var corpo =window.document.body
+            corpo.style.backgroundColor = mudac
+
+            if (mudac == "black"){
+                var corpo =window.document.body
+                corpo.style.color = "white"
+            } else {
+            var corpo =window.document.body
+            corpo.style.backgroundColor = mudac
+        }
+            
+        }
+       
+    </script>
+</body>
+</html>

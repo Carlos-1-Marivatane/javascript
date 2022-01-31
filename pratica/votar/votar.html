@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de votacao</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vote e decida o futuro do País!</h1>
+    <p>Nome: <input type="text" name="nome" id="nome"></p>
+    <p>Idade: <input type="number" name="idade" id="idade"></p>
+    <p><input type="button" value="Submeter" onclick="sol()"></p>
+    <div id="res"></div>
+   
+    <script>
+        function sol(){
+        var nome = document.querySelector("input#nome")
+        var nom = nome.value
+
+        var idade = window.document.querySelector("input#idade")
+        var idad = idade.value
+
+        var res = window.document.querySelector("div#res")
+       
+
+            if(idad < 21){
+                res.innerHTML = (`<p>Senhor(a) <strong>${nom}</strong> você tem <strong>${idad} anos de idade</strong>.</p> <p>Não pode votar</p>`) 
+            }  else if(idad > 60){
+                res.innerHTML=(`<p>Senhor(a) <strong>${nom}</strong> você tem <strong>${idad} anos de idade</strong>.</p> <p>Pode votar opcionalmente!</p>`)
+            } else{
+                res.innerHTML=(`<p>Senhor(a)<strong> ${nom}</strong> você tem ${idad} anos de idade.</p> <p>O seu voto é obrigatório!</p>
+                <strong><p>Vote e contribua para o futuro do País!</P></strong>`)
+            }
+        }
+    </script>
+</body>
+</html>
