@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULANDO A AREA</title>
+</head>
+<body>
+    <h1>Faça o seu cálculo</h1>
+    <p>Introduza os dados</p>
+    <p>Raio:<input type="number" name="raio" id="raio"></p>
+    <p><input type="button" value="Calcular" onclick="calcule()"></p>
+    <div id="res"></div>
+
+    <script>
+        function calcule(){
+        var raio = window.document.querySelector("input#raio")
+        var rai = raio.value
+        var pi = 3.14159 
+
+        var res =window.document.querySelector("div#res")
+        var cal = (rai*pi)
+        res.innerHTML= `O resultado do cálculo é: Área = ${cal}`
+    
+    }
+    </script>
+</body>
+</html>
