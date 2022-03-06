@@ -1,0 +1,23 @@
+body{
+    background-color:#759a9b;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background-color: #b8dfdd;
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+    max-width:max-content ;
+}
+footer{
+    text-align: center;
+    color: rgb(247, 242, 233);
+    
+
+   
+}
