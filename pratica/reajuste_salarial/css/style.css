@@ -1,0 +1,18 @@
+header>h1{
+    color: rgb(44, 38, 38);
+    text-transform: uppercase;
+    text-align: center;
+}
+section{
+    margin: auto;
+    background-color: rgba(175, 159, 159, 0.678);
+    padding: 10px;
+    width: 420px;
+    color: rgb(0, 0, 0);
+    max-height: 600px;
+}
+footer{
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+}

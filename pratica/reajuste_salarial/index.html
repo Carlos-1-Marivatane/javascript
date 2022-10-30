@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizacoes Tabajara</title>
+    <script src="js/back.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background: white url(imagens/ponte.jpg) center top no-repeat  fixed;
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ajuste salarial, preencha os dados</h1>
+    </header>
+    <section>
+        <p><img src="imagens/3.jpg" alt="Icon da empresa"></p>
+        <div>
+            INFORME O SALÁRIO:<input type="number"  id="salario">
+            <input type="button" value="Reajustar" onclick="calcular()">
+        </div>
+        <div id = 'res'>
+            ....
+        </div>
+    </section>
+    <footer>
+        &copy;ORGANIZAÇÕES TABAJARA
+    </footer>
+</body>
+</html>
