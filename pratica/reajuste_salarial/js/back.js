@@ -5,7 +5,7 @@ function calcular(){
     if(salari.length == ''){
         res.innerHTML = '[ERRO] POR FAVOR, VERIFIQUE OS DADOS E TENTE NOVAMENTE!'
         res.style.color='WHITE'
-        res.style.fontSize='20px'
+        res.style.fontVariant='small-caps'
         res.style.paddingTop = '10px'
     }else{
         var salar = Number(salari)
@@ -31,7 +31,7 @@ function calcular(){
             res.innerHTML += `Novo Salário, após o aumento: <strong>${reajuste} MT</strong>`
             res.style.paddingTop = '10px'
             res.style.color='#1b0707'
-            res.style.fontSize='18px'
+            res.style.fontVariant='SMall-caps'
         }else if(salar <1500){
             //10%
             var percentagem = (salar*10)/100

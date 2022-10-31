@@ -1,7 +1,8 @@
 header>h1{
     color: rgb(44, 38, 38);
-    text-transform: uppercase;
+ 
     text-align: center;
+    font-variant: small-caps;
 }
 section{
     margin: auto;
