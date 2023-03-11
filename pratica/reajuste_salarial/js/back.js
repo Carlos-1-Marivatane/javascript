@@ -27,7 +27,7 @@ function calcular(){
             var reajuste = percentagem + salar
             res.innerHTML = `Salário antes do reajuste: <strong>${salar} MT</strong> <br>`
             res.innerHTML += `Percentual de aumento aplicado: <strong> 15%</strong> <br>`
-            res.innerHTML += `Valor do aumento: <strong>${percentagem}</strong><br>`
+            res.innerHTML += `Valor do aumento: <strong>${percentagem}</strong> <br>`
             res.innerHTML += `Novo Salário, após o aumento: <strong>${reajuste} MT</strong>`
             res.style.paddingTop = '10px'
             res.style.color='#1b0707'
@@ -38,7 +38,7 @@ function calcular(){
             var reajuste = percentagem + salar
             res.innerHTML = `Salário antes do reajuste: <strong>${salar} MT</strong> <br>`
             res.innerHTML += `Percentual de aumento aplicado: <strong> 10%</strong> <br>`
-            res.innerHTML += `Valor do aumento: <strong>${percentagem}</strong><br>`
+            res.innerHTML += `Valor do aumento: <strong>${percentagem}</strong> <br>`
             res.innerHTML += `Novo Salário, após o aumento: <strong>${reajuste} MT</strong>`
             res.style.paddingTop = '10px'
             res.style.color='#1b0707'
@@ -49,8 +49,8 @@ function calcular(){
             var reajuste = percentagem + salar
             res.innerHTML = `Salário antes do reajuste: <strong>${salar} MT</strong> <br>`
             res.innerHTML += `Percentual de aumento aplicado: <strong> 5%</strong> <br>`
-            res.innerHTML += `Valor do aumento: <strong>${percentagem}</strong><br>`
-            res.innerHTML += `Novo Salário, após o aumento: <strong>${reajuste} MT</strong>`
+            res.innerHTML += `Valor do aumento: <strong>${percentagem}</strong> <br>`
+            res.innerHTML += `<br> Novo Salário, após o aumento: <strong>${reajuste} MT</strong>`
             res.style.paddingTop = '10px'
             res.style.color='#1b0707'
             res.style.fontSize='18px'
